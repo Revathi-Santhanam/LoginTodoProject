@@ -7,6 +7,7 @@ import com.rev.springbootjpa.repository.TodoRepository;
 import com.rev.springbootjpa.request.TodoRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -33,9 +34,9 @@ public class TodoService {
         return findAllTodo(todo.getUserId());
     }
 
-    public List<Todo> updateTodo(TodoRequest todo){
+    public List<Todo> updateTodo(Integer id,TodoRequest todo){
         Todo org = new Todo();
-        org.setTodo(todo.getTodo());
+        org.setTId(id);
         org.setTodo(todo.getTodo());
         AppUser user=appUserRepository.findById(todo.getUserId()).get();
         org.setAppUser(user);

@@ -1,5 +1,5 @@
 
-# TODO APPLICATION USING JSP-JDBC
+# TODO APPLICATION USING SRING BOOT
 
 This project is developed using JAVA V-17.0.8 and Springboot.
 
@@ -29,10 +29,27 @@ Project: Maven based project.
    - AppUser Controller
 
 ⏩Repository
-   -Todo Repository
+   - Todo Repository
+   - AppUser Repository
 
-⏩
+⏩Service
+   - Todo Service
+   - AppUser Service
 
 ## Dependencies Used
 
-1. 
+1. Spring Data JPA
+2. Spring Data JDBC
+3. MySQL Driver
+4. SpringWeb
+5. Validation
+6. Lombok
+7. Spring Boot Devtools
+
+## Mapping methods
+
+1. GetMapping
+2. PostMapping
+3. PutMapping
+4. DeleteMapping
+
